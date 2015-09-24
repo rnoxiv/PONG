@@ -1,0 +1,35 @@
+                                                     /*                 *\
+	                                                     PONG         
+                                                     */                 \*
+
+Auteurs : SABATIER David et THÉPAULT Baptiste
+
+Liste des boutons du menu horizontal :
+	-Menu : ramène au Menu du jeu, réinitialise aux conditions de départ;
+	-Music : un clic permet d'arrèter la musique. Un nouveau clic la redémarrera;
+	-Param : permet d'initialiser 2 mobiles sur la fenêtre : un cercle et un triangle;
+	-Add : permet de créer un nouveau solide (cercle, triangle, mur) dans la fenêtre;
+	-Lauch : depuis l'écran de Menu, permet de mettre en mouvement les mobiles. Laisse place au boutton pause;
+	-Pause : depuis l'écran de Menu, permet d'arrèter les mobiles. Laisse place au boutton Lauch;
+	-Game : permet de commencer un jeu décris ci-après.
+
+
+//General
+	
+	Une collision avec un mur permet d'augmenter la vitesse du mobile grâce au coefficient du mur
+
+//Ajout
+
+	On peut changer la couleur d'un mobile en effectuant un clic droit sur celui-ci! (mettre en pause pour une réussite assurée!)
+
+	Lors d'un ajout d'un cercle, la case height ne prendra rien en compte, le radius sera géré par la case width.
+De même, si un mur est ajouté, la liste de vitesse et d'orientation ne seront pas prises en compte!
+
+Lors du paramètrage et de l'ajout, un système de collision est mis en place permettant de détecter si le nouveau solide est créé sur un mur/mobile, empéchant la
+création si c'est le cas!
+
+//Game
+
+	Le but du jeu est d'esquiver les différentes balles rouges qui apparaissent aléatoirement sur la map lorsqu'une condition est remplie.
+Le jeu commence avec une boule et fini avec 9. Si le joueur survit jusque là, il aura gagné!
+Les collisions entre mobile ont été désactivées dans ce mode de Pong afin de faciliter les déplacements du joueur.
